@@ -22,7 +22,7 @@ const Forgotpass = () => {
       setStep(2);
       setMessage('Mã xác nhận đã được gửi tới email của bạn.');
     } catch (err) {
-      setError(err.response?.data || 'Gửi email thất bại.');
+      setError(err.response?.data || 'メールの送信に失敗しました。');
     } finally {
       setLoading(false);
     }
