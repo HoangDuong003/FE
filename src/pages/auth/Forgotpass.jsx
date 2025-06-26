@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import api from '../../api/api';
 import { useNavigate } from 'react-router-dom';
 
 const Forgotpass = () => {
@@ -18,7 +18,7 @@ const Forgotpass = () => {
     setError('');
     setMessage('');
     try {
-      await axios.post(`/api/mail/verify/${email}`);
+      await api.post(`/api/mail/verify/${email}`);
       setStep(2);
       setMessage('Mã xác nhận đã được gửi tới email của bạn.');
     } catch (err) {
@@ -34,7 +34,7 @@ const Forgotpass = () => {
     setError('');
     setMessage('');
     try {
-      await axios.post('/api/mail/verify-and-change-password', {
+      await api.post('/api/mail/verify-and-change-password', {
         email,
         newPassword,
         token: otp,
