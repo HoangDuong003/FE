@@ -1,0 +1,210 @@
+.profileModalBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 18px;
+    max-width: 1100px;
+    min-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .profileHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #183a6d;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    padding: 32px 32px 24px 32px;
+    min-height: 180px;
+  }
+  .profileAvatarCol {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 32px;
+  }
+  .profileAvatarRect {
+    width: 140px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2.5px solid #fff;
+    background: #f5f5f5;
+    box-shadow: 0 2px 12px rgba(24,58,109,0.10);
+    display: block;
+  }
+  .profileAvatarPlaceholder {
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profileNameCol {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .profileName {
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  }
+  .profileInfoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 32px 32px 0 32px;
+  }
+  .profileInfoBlock {
+    flex: 1;
+    min-width: 220px;
+    padding-bottom: 18px;
+  }
+  .profileInfoBlock:first-child {
+    border-bottom: 1.5px solid #e0e0e0;
+    margin-bottom: 18px;
+  }
+  .profileInfoBlock:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .profileInfoTitle {
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #183a6d;
+  }
+  .profileInfoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 32px;
+  }
+  .profileInfoLabel {
+    font-weight: 500;
+    color: #555;
+    font-size: 0.98rem;
+  }
+  .profileInfoValue {
+    font-weight: 700;
+    font-size: 1.08rem;
+    color: #222;
+  }
+  .profileModalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 24px;
+    padding: 0 32px;
+  }
+  @media (max-width: 700px) {
+    .profileModalBox {
+      min-width: 0;
+      max-width: 98vw;
+      padding-bottom: 16px;
+    }
+    .profileHeader {
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 8px 16px 8px;
+    }
+    .profileAvatarCol {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+    .profileInfoSection {
+      padding: 18px 8px 0 8px;
+    }
+    .profileModalActions {
+      padding: 0 8px;
+    }
+  }
+  .groupButton {
+    display: flex;
+    gap: 0;
+  }
+  .groupButtonLeft {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    box-shadow: none !important;
+  }
+  .groupButtonRight {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    margin-left: 0;
+    margin-right: 5px;
+    box-shadow: none !important;
+    padding-left: 12px;
+  }
+  .addFormRow {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+  }
+  .addFormLeft {
+    min-width: 200px;
+    max-width: 260px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .addFormRight {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 32px;
+    .avatarRect {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      aspect-ratio: 4/5;
+    }
+  }
+  .avatarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .avatarRect {
+    width: 240px;
+    height: 300px;
+    object-fit: cover;
+    border: 1.5px solid #1976d2;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background: #f5f5f5;
+    display: block;
+  }
+  .avatarButton {
+    margin-top: 12px;
+    background: #1976d2;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .avatarBelowFields {
+    display: none;
+  }

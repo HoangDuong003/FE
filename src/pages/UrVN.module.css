@@ -1,0 +1,53 @@
+/* src/pages/UrVN.module.css */
+.container {
+    padding: 40px;
+    width: 100%;
+    min-height: calc(100vh - 112px);
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto; /* Center the container */
+}
+
+.title {
+    color: #2d3eaf;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.description {
+    font-size: 25px;
+    margin-bottom: 24px;
+    line-height: 1.7;
+}
+
+.card {
+    background: #f7fafd;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #e0e7ef;
+    padding: 24px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imageContainer {
+    flex: 1;
+    min-width: 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+} 

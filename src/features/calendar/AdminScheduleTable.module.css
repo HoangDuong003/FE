@@ -1,0 +1,201 @@
+.container {
+  width: 100vw;
+  height: calc(100vh - 52px);
+  background: #f7fafd;
+  position: fixed;
+  top: 52px;
+  left: 0;
+  overflow: auto;
+  padding: 16px;
+}
+.header {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 16px;
+}
+.title {
+  text-align: center;
+  margin: 24px 0;
+  color: #1976d2;
+  font-weight: 700;
+  font-size: 2rem;
+  width: 100%;
+}
+.headerBar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.headerBarLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dateText {
+  font-weight: 600;
+  font-size: 18px;
+  color: #1976d2;
+  min-width: 120px;
+  text-align: center;
+}
+.searchInput {
+  width: 220px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px solid #1976d2;
+}
+.tableContainer {
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.08);
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+.tableHeaderRow {
+  background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
+  border-radius: 8px;
+}
+/* .tableHeaderCell {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  padding: 8px;
+}
+.tableHeaderCellLeft {
+  text-align: left;
+  min-width: 140px;
+} */
+.tableHeaderCell, .tableHeaderCellMinWidth, .tableHeaderCellLeft {
+  color: #fff !important;
+  border-right: 1.5px solid #e3eefe;
+}
+.tableCell {
+  background: #fff;
+  min-height: 48px;
+  border: 1px solid #e3e3e3;
+  position: relative;
+  transition: background 0.2s;
+  padding: 0;
+}
+table {
+  border-collapse: separate !important;
+  border-spacing: 0;
+}
+.tableCell:first-child {
+  border-right: 3px solid #222 !important;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+.tableRowEven {
+  background: #f7fafd;
+  transition: background 0.2s;
+}
+.tableRowOdd {
+  background: #e3f2fd;
+  transition: background 0.2s;
+}
+.eventBox {
+  color: #fff;
+  border-radius: 12px;
+  margin: 4px;
+  padding: 4px 10px;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.10);
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+.eventBox:hover {
+  filter: brightness(1.15);
+}
+.tableHeaderCellBorderRadius {
+  border-top-left-radius: 12px;
+  width: 40px;
+}
+.tableHeaderCellContent, .tableHeaderCellContentSunday {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-weight: 700;
+  font-size: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #fff;
+}
+.tableHeaderCellContentSunday {
+  color: #ffcccc;
+}
+.tableHeaderCellMinWidth {
+  min-width: 90px;
+  white-space: nowrap;
+  padding: 0;
+  height: 64px;
+  vertical-align: middle;
+  border-right: 1px solid #fff;
+}
+.tableHeaderCellMinWidth:last-child {
+  border-right: none;
+}
+.tableHeaderCellDate {
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  padding-bottom: 0;
+  text-align: center;
+}
+.noEmployeeCell {
+  padding: 32px 0;
+  color: #888;
+  font-size: 18px;
+}
+.tableCellIndex {
+  font-weight: 500;
+  color: #1976d2;
+  font-size: 15px;
+  border-right: 1px solid #888 !important;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+.tableCellName {
+  font-weight: bold;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+:global(.MuiTooltip-tooltip) {
+  font-size: 1.4rem !important;
+  padding: 28px 36px !important;
+  min-width: 320px !important;
+  line-height: 2.2 !important;
+  background: #333 !important;
+  color: #fff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18) !important;
+}
+.filterSelect {
+  padding: 8px;
+  min-width: 160px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: #fff;
+  margin-right: 4px;
+}
+.filterBarRight {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
