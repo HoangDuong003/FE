@@ -3,7 +3,7 @@ import { Box, Paper, Typography, TextField, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import AlertPopup from '../../components/common/AlertPopup';
 import logo from '../../assets/images/urban-logo.png';
-import axios from 'axios';
+import api from '../../api/api';
 
 const ChangePassword = () => {
   const [oldPassword, setOldPassword] = useState('');
@@ -28,7 +28,7 @@ const ChangePassword = () => {
         setLoading(false);
         return;
       }
-      await axios.post('/api/user/change-password', {
+      await api.post('/api/user/change-password', {
         email: currentUser.email,
         oldPassword,
         newPassword
