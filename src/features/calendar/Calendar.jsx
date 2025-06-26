@@ -408,7 +408,16 @@ export default function Calendar() {
                 handleMenuClose();
                 return;
             }
-            await dispatch(deleteEvent(menuEvent.id));
+            try {
+                await dispatch(deleteEvent(menuEvent.id)).unwrap();
+                setAlertMessage('削除完了');
+                setAlertType('success');
+                setOpenAlert(true);
+            } catch (error) {
+                setAlertMessage(error.message || '削除に失敗しました。');
+                setAlertType('error');
+                setOpenAlert(true);
+            }
         }
         handleMenuClose();
     };
